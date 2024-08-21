@@ -1,0 +1,169 @@
+@charset "ISO-8859-1";
+*
+{
+	margin:0;
+    padding:0;
+    text-decoration:none;
+    font-family:Okra, Helvetica, sans-serif;
+	font-family:Okra, Helvetica, sans-serif;
+}
+body
+{
+	width:100vw;
+	height:100vh;
+    scroll-behavior: auto;
+
+}
+.header
+{
+	display:flex;
+	flex-flow:row nowrap;
+	width:100vw;
+	z-index:1;	
+}
+#icon
+{
+	margin-left:100px;
+	margin-top:20px;
+	font-size:17px;
+    color: white;
+    z-index: 1;
+    font-weight: bold;
+}
+.navbar
+{
+	margin-left:600px;
+	margin-top:20px;
+	width:700px;
+	display:flex;
+	flex-flow:row nowrap;
+	
+}
+.navbar a
+{
+	font-size:25px;
+	color:white;
+    margin-right: 50px;
+    z-index: 1;
+    font-weight: bold;
+}
+.navbar a:hover
+{
+	color:red;
+}
+.banner img
+{
+	z-index:-2;
+	top:-100px;
+	position:absolute;
+	width:100%;
+	height:500px;
+}
+.head
+{
+    display: flex;
+    flex-flow: column nowrap;
+}
+#heading
+{
+	font-size:105px;
+	position:relative;
+	top:5px;
+	color:whitesmoke;
+	left:450px;
+	font-weight:bold;
+    text-transform: lowercase;
+    z-index:1;
+    
+}
+#heading:hover
+{
+    translate: scale(-1);
+}
+#desc
+{
+    font-size:30px;
+	position:relative;
+	top:7px;
+	color:whitesmoke;
+	left:380px;
+	font-weight:bold;
+    z-index: 2;
+}
+
+.restaurants
+{
+	margin-top: -0px;
+	width: 100%;
+	height:400px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+#rest-heading
+{
+	text-align: center;
+	margin-top: 200px;
+	color: lightgray;
+}
+#rest
+{
+	color: orange;
+}
+.rest-menu
+{
+	border: 2px solid black;
+	width: 30%;
+	height: 450px;
+	padding: 10px;
+	display: flex;
+	flex-flow: column;
+	margin-bottom:50px;
+}
+.rest-name
+{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 700;
+}
+.data
+{
+	margin-left: 100px;
+	text-align: center;
+}
+.details
+{
+	margin-top: 20px;
+	margin-left: 50px;
+}
+.details p
+{
+	padding: 5px;
+}
+.view-menu
+{
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 130px;
+	width: 100px;
+	height: 30px;
+	border: 1px solid lightgray;
+	padding: 5px;
+	background-color: green;
+	color: white;
+}
+.dot
+{
+	margin-left: 50px;
+	font-size: 18px;
+	font-weight: 700;
+}
+.rest-link
+{
+	text-align: center;
+	margin-top: 200px;
+	margin-left: 600px;
+	color: lightgray;
+	text-decoration:underline;
+}

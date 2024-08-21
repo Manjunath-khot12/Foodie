@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+  }
+
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  .form-checkbox {
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .back-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .back-home i {
+    margin-right: 5px;
+    font-size: 1.2em;
+  }
+
+  .back-home:hover {
+    color: #0056b3;
+  }
+</style>
+</head>
+<body>
+  <a href="index.jsp" class="back-home">
+    <i class="fa fa-home"></i> Back to Home
+  </a>
+
+  <form action="login">
+    <label for="email">Enter the Email-Id:</label>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="password">Enter the password:</label>
+    <input type="password" id="password" name="password" required><br>
+    
+    <label for="confirmpassword">Confirm the password:</label>
+    <input type="password" id="confirmpassword" name="confirmpassword" required><br>
+    
+    <div class="form-checkbox">
+      <input type="checkbox" id="agree" name="agree" required>
+      <label for="agree">Agree with all the rules and regulations</label>
+    </div>
+    
+    <input type="submit" value="Login">
+  </form>
+</body>
+</html>
